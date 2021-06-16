@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: Inicio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="container">
+        <h1>Formulario</h1>
+    </header>
+    <div class="container">
+        <ul><li><h4>Registro de materias</h4></li></ul>
+        <form action="#">
+            <div class="mb-3">
+              <label for="txtMateria" class="form-label">Materia: </label>
+              <input type="text" placeholder="Ingrese nombre de la Materia" class="form-control" id="txtMateria" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="txtNRC" class="form-label">NRC: </label>
+              <input type="number" placeholder="Ingrese NRC" class="form-control" id="txtNRC">
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="txtDocente" class="form-label">Docente: </label>
+                <select name="txtDocente" id="txtDocente">
+                    <option value="Dennis Caisa">Dennis Caisa</option>
+                    <option value="Saul Caisa">Saul Caisa</option>
+                    <option value="Juan Perez">Juan Perez</option>
+                    <option value="Paul Lascano">Paul Lascano</option>
+                    <option value="Pedro Zapata">Pedro Zapata</option>
+                </select>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="txtHoras" class="form-label">Horas a la semana: </label>
+                <input type="number" min="2" max="8" placeholder="Ingrese horas a la semana" class="form-control" id="txtHoras">
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="txtDescripcion">Descripcion:</label><br>
+                <textarea name="Area de descripcion" placeholder="Ingrese Descripcion de la Materia" id="txtDescripcion" cols="34" rows="5"></textarea>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label>Sistema:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="txtSistema" id="txtSistema">
+                    <option value="diurno">Diurno</option>
+                    <option value="nocturno">Nocturno</option>
+                </select>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label>Material Especial: </label>&nbsp;&nbsp;&nbsp;
+                <label>Si </label><input type="radio" name="txtEspecial" id="txtEspecial" value="Si">&nbsp;&nbsp;
+                <label>No </label><input type="radio" name="txtEspecial" id="txtEspecial" value="No">
+            </div>
+            <br>
+            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+    </div>
+
+</body>
+</html>
